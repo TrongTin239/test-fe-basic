@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { borderRadius, Box, Stack } from "@mui/system";
+import { Box, Stack } from "@mui/system";
 import { Typography } from "@mui/material";
 import { images } from "../../../constants/image";
 
