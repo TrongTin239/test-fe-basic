@@ -9,8 +9,7 @@ export default function Footer() {
     <Box sx={{ backgroundColor: "#383D40", color: "white" }}>
       <Container>
         <Stack flexDirection={"row"} flexWrap="wrap">
-          <Box></Box>
-          <Box py={"50px"}>
+          <Box py={"50px"} pl="40px">
             <Typography fontSize={"40px"} variant="h6">
               Brandname
             </Typography>
