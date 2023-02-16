@@ -35,18 +35,18 @@ export default function CustomerApp() {
             </Box>
           </Box>
           <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
-            <Box sx={{ py: "30px", px: "100px" }}>
+            <Box sx={{ py: "30px", px: "10px" }}>
               <Typography variant="h6">{title}</Typography>
               <Box component={"p"} sx={{ textAlign: "left" }}>
                 {content}
               </Box>
 
-              <Stack flexDirection={"row"} justifyContent={"space-between"}>
+              <Stack flexDirection={"row"} justifyContent={"center"}>
                 <Box
                   component={"img"}
                   alt="ggplay"
                   src={images.GGPLAY}
-                  sx={{ width: "150px" }}
+                  sx={{ width: "150px", mr: "10px" }}
                 ></Box>
                 <Box
                   component={"img"}
