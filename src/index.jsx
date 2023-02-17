@@ -1,20 +1,24 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./components/Layouts/MainLayout";
-import HomePage from "./features/Home/pages/HomePage";
+
+import Loading from "./components/commons/Loading";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const HomePage = lazy(() => import("./features/Home/pages/HomePage"));
 root.render(
   <>
     <BrowserRouter>
-      <Routes>
-        <Route path="" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
-        </Route>
-      </Routes>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="" element={<MainLayout />}>
+            <Route index element={<HomePage />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   </>
 );

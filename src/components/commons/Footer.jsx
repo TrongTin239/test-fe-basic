@@ -24,7 +24,7 @@ export default function Footer() {
           <Stack flexDirection={"row"} flexWrap="wrap">
             <Box component={"ul"} sx={{ listStyle: "none" }}>
               <h2>Home</h2>
-              <li>About us</li>
+              <Box component={"li"}>About us</Box>
               <li>Intro</li>
               <li>Features</li>
               <li>Price</li>
